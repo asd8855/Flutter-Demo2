@@ -6,8 +6,7 @@ class ProfilePage extends StatefulWidget {
   _ProfilePageState createState() => new _ProfilePageState();
 }
 
-class _ProfilePageState extends State<ProfilePage>
-    with AutomaticKeepAliveClientMixin {
+class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -20,7 +19,4 @@ class _ProfilePageState extends State<ProfilePage>
   Widget _profilePageWidget() {
     return new Center(child: new Text('Profile'));
   }
-
-  @override
-  bool get wantKeepAlive => true;
 }

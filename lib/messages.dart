@@ -6,8 +6,7 @@ class MessagesPage extends StatefulWidget {
   _MessagesPageState createState() => new _MessagesPageState();
 }
 
-class _MessagesPageState extends State<MessagesPage>
-    with AutomaticKeepAliveClientMixin {
+class _MessagesPageState extends State<MessagesPage> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -21,6 +20,4 @@ class _MessagesPageState extends State<MessagesPage>
     return new Center(child: new Text('Messages'));
   }
 
-  @override
-  bool get wantKeepAlive => true;
 }
