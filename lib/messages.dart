@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:english_words/english_words.dart';
+import 'login.dart';
 
 class MessagesPage extends StatefulWidget {
   @override
@@ -17,7 +17,17 @@ class _MessagesPageState extends State<MessagesPage> {
   }
 
   Widget _messagesPageWidget() {
-    return new Center(child: new Text('Messages'));
+    // return new Center(child: new Text('Messages'));
+    return new Center(
+        child: new RaisedButton(
+            child: Text(
+              '登录',
+              style: TextStyle(color: Colors.white),
+            ),
+            color: Colors.red,
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => LoginPage()));
+            }));
   }
-
 }
