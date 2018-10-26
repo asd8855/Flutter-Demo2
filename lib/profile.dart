@@ -7,6 +7,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  final _images = <String>['1', '2', '3', '4', '5'];
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -17,6 +18,31 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Widget _profilePageWidget() {
-    return new Center(child: new Text('Profile'));
+    return new Container(
+      // margin: EdgeInsets.symmetric(vertical: 20.0),
+      height: 200.0,
+      child: new ListView(scrollDirection: Axis.horizontal, children: <Widget>[
+        new Container(
+          child: new Image.network(
+            'https://ibw.bwnet.com.tw/image/pool/2017/11/fc17a963d78b9972bba94f6827f49d54.jpg',
+          ),
+        ),
+        new Container(
+          child: new Image.network(
+            'https://img1.gtimg.com/20/2063/206319/20631915_980x1200_292.jpg',
+          ),
+        ),
+        new Container(
+          child: new Image.network(
+            'http://nickchungphoto.weebly.com/uploads/5/3/8/3/53839029/4837605_orig.jpg',
+          ),
+        ),
+        new Container(
+          child: new Image.network(
+            'http://p1.img.cctvpic.com/photoworkspace/contentimg/2017/09/06/2017090609481566419.jpg',
+          ),
+        ),
+      ]),
+    );
   }
 }
