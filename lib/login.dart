@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
               new TextField(
                 controller: _controller,
                 maxLength: 11,
-                keyboardType: TextInputType.number,
+                keyboardType: TextInputType.phone,
                 onChanged: (String string) {
                   print(string);
                 },
